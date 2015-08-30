@@ -241,7 +241,7 @@
         name: "basicBot",
         loggedInID: null,
         scriptLink: "https://rawgit.com/Upcoming-Records/basicBot/master/basicBot.js",
-        cmdLink: "http://git.io/245Ppg",
+        cmdLink: "https://github.com/Upcoming-Records/basicBot/blob/master/commands.md",
         chatLink: "https://rawgit.com/Upcoming-Records/basicBot/master/lang/en.json",
         chat: null,
         loadChat: loadChat,
