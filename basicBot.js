@@ -307,6 +307,7 @@
             songstats: true,
             commandLiteral: "!",
             blacklists: {
+                OP: "https://rawgit.com/Upcoming-Records/basicBot-customization/master/blacklists/BANNEDlist.json"
                 BANNED: "https://rawgit.com/Upcoming-Records/basicBot-customization/master/blacklists/BANNEDlist.json"
             }
         },
@@ -355,7 +356,7 @@
                 position: []
             },
             blacklists: {
-                BANNED: "https://rawgit.com/Upcoming-Records/basicBot-customization/master/blacklists/BANNEDlist.json"
+                
             },
             newBlacklisted: [],
             newBlacklistedSongFunction: null
