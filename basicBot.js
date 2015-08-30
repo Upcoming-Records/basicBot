@@ -355,7 +355,7 @@
                 position: []
             },
             blacklists: {
-
+                BANNED: "https://rawgit.com/Upcoming-Records/basicBot-customization/master/blacklists/BANNEDlist.json"
             },
             newBlacklisted: [],
             newBlacklistedSongFunction: null
