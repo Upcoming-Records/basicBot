@@ -308,7 +308,6 @@
             commandLiteral: "!",
             blacklists: {
                 OP: "https://rawgit.com/Upcoming-Records/basicBot-customization/master/blacklists/BANNEDlist.json"
-                BANNED: "https://rawgit.com/Upcoming-Records/basicBot-customization/master/blacklists/BANNEDlist.json"
             }
         },
         room: {
