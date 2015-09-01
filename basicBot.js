@@ -1037,10 +1037,11 @@
                 var alreadyPlayed = false;
                 var apihistory = API.getHistory();
                 var name = obj.dj.username;
+                var track = obj.lastPlay;
                 var historySkip = setTimeout(function () {
                     for (var i = 0; i < apihistory.length; i++) {
                         
-                        if(obj.media.cid.indexOf("[") === -1)
+                        if(track.media.author("[") === -1)
                             {
                             API.sendChat("IT WORKS");
                             }
