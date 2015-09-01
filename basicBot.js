@@ -1039,6 +1039,12 @@
                 var name = obj.dj.username;
                 var historySkip = setTimeout(function () {
                     for (var i = 0; i < apihistory.length; i++) {
+                        
+                        if(obj.media.cid.indexOf("[") === -1)
+                            {
+                            API.sendChat("IT WORKS");
+                            }
+                        
                         if (apihistory[i].media.cid === obj.media.cid) {
                             basicBot.room.historyList[i].push(+new Date());
                             alreadyPlayed = true;
