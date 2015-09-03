@@ -978,7 +978,7 @@
                         if (basicBot.room.blacklists[bl].indexOf(mid) > -1) {
                             API.sendChat(subChat(basicBot.chat.isblacklisted, {blacklist: bl}));
                             if (basicBot.settings.smartSkip){
-                                return basicBot.roomUtilities.smartSkip();
+                                return API.moderateBanUser(user.id, 1, API.BAN.DAY);
                             }
                             else {
                                 return API.moderateBanUser(user.id, 1, API.BAN.DAY);
