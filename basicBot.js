@@ -981,7 +981,7 @@
                                 return basicBot.roomUtilities.smartSkip();
                             }
                             else {
-                                return API.moderateForceSkip();
+                                return API.moderateBanUser(user.id, 1, API.BAN.DAY);
                             }
                         }
                     }
