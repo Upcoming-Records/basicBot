@@ -79,6 +79,8 @@ Bouncer
 |!unmute | | unmute user |
 |!voteratio | @user | display the vote statistic for a user |
 |!whois | @user | returns plug related information about user |
+|!stafftips | | links you to a page where you can find out about getting staff |
+|!statslink | | links you to our songstats page |
 
 Bouncer+
 --------
