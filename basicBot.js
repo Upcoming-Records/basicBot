@@ -238,7 +238,7 @@
     var basicBot = {
         version: "2.8.420",
         status: false,
-        name: "basicBot",
+        name: "Z00P",
         loggedInID: null,
         scriptLink: "https://rawgit.com/Upcoming-Records/basicBot/master/basicBot.js",
         cmdLink: "https://github.com/Upcoming-Records/basicBot/blob/master/commands.md",
@@ -293,7 +293,7 @@
             motdEnabled: false,
             motdInterval: 5,
             motd: "Temporary Message of the Day",
-            filterChat: true,
+            filterChat: false,
             etaRestriction: false,
             welcome: true,
             opLink: null,
@@ -304,7 +304,7 @@
             website: null,
             intervalMessages: [],
             messageInterval: 5,
-            songstats: true,
+            songstats: false,
             commandLiteral: "!",
             blacklists: {
                 BANNED: "https://rawgit.com/Upcoming-Records/basicBot-customization/master/blacklists/BANNEDlist.json"
