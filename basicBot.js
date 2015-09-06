@@ -248,7 +248,7 @@
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: "basicBot",
+            botName: "Z00P",
             language: "english",
             chatLink: "https://rawgit.com/Upcoming-Records/basicBot/master/lang/en.json",
             scriptLink: "https://rawgit.com/Upcoming-Records/basicBot/master/basicBot.js",
