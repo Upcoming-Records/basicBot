@@ -81,6 +81,8 @@ Bouncer
 |!whois | @user | returns plug related information about user |
 |!stafftips | | links you to a page where you can find out about getting staff |
 |!statslink | | links you to our songstats page |
+|!slack | | returns a link to our slack joining page |
+|!update | | links you to the most recent update |
 
 Bouncer+
 --------
