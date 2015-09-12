@@ -201,6 +201,7 @@
     "selfhug": "\/me You can't hug yourself. It would be cool if you could though",
     "nouserhug": "You can't hug someone who isn't here",
     "hugged": "\/me %%NAMEFRON%% hugged @%%NAMETO%%, %%HUG%%",
+    "hugs": "\/me HUGS FOR EVERYONE!",
     "cycleguardtime": "\/me [@%%NAME%%] The cycleguard is set to %%TIME%% minute(s).",
     "dclookuprank": "\/me [@%%NAME%%] Only bouncers and above can do a lookup for others.",
     "emojilist": "\/me Emoji list: %%LINK%%",
