@@ -155,7 +155,7 @@
     "nousercookie": "\/em doesn't see %%NAME%% in room and eats a cookie himself.",
     "selfcookie": "\/me @%%NAME%%, you're a bit greedy, aren't you? Giving cookies to yourself, bah. Share some with other people!",
     "cookie": "\/me @%%NAMETO%%, %%NAMEFROM%% %%COOKIE%%",
-    "highfive": "\/me %%%NAMEFRON%% highfived @%%NAMETO%%, %%HIGHFIVE%%",
+    "highfive": "\/me %%NAMEFROM%% highfived @%%NAMETO%%, %%HIGHFIVE%%",
     "selfhighfive": "\/me You can't highfive yourself",
     "nouserhighfive": "You can't highfive someone who isn't here",
     "cycleguardtime": "\/me [@%%NAME%%] The cycleguard is set to %%TIME%% minute(s).",
