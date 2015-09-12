@@ -236,7 +236,7 @@
     var botCreatorIDs = ["3851534", "4105209"];
 
     var basicBot = {
-        version: "2.8.70",
+        version: "2.8.420",
         status: false,
         name: "Z00P",
         loggedInID: null,
@@ -326,8 +326,8 @@
             autodisableInterval: null,
             autodisableFunc: function () {
                 if (basicBot.status && basicBot.settings.autodisable) {
-                    API.sendChat('');
-                    API.sendChat('');
+                    API.sendChat('!afkdisable');
+                    API.sendChat('!joindisable');
                 }
             },
             queueing: 0,
@@ -2443,7 +2443,7 @@
 
             killCommand: {
                 command: 'kill',
-                rank: 'manager',
+                rank: 'bouncer',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -2905,7 +2905,7 @@
 
             reloadCommand: {
                 command: 'reload',
-                rank: 'manager',
+                rank: 'bouncer',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -3617,90 +3617,7 @@
                     }
                 }
             },
-/*
-            highfiveCommand: {
-                command: 'highfive',
-                rank: 'user',
-                type: 'startsWith',
-                getHighfive: function (chat) {
-                    var c = Math.floor(Math.random() * basicBot.chat.highfives.length);
-                    return basicBot.chat.highfives[c];
-                },
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                        var msg = chat.message;
 
-                        var space = msg.indexOf(' ');
-                        if (space === -1) {
-                            API.sendChat(basicBot.chat.highfived);
-                            return false;
-                        }
-                        else {
-                            var name = msg.substring(space + 2);
-                            var user = basicBot.userUtilities.lookupUserName(name);
-                            if (user === false || !user.inRoom) {
-                                return API.sendChat(subChat(basicBot.chat.nouserhighfive, {name: name}));
-                            }
-                            else if (user.username === chat.un) {
-                                return API.sendChat(subChat(basicBot.chat.selfhighfive, {name: name}));
-                            }
-                            else {
-                                return API.sendChat(subChat(basicBot.chat.highfive, {nameto: user.username, namefrom: chat.un, highfive: this.getHighfive()}));
-                            }
-                        }
-                    }
-                }
-            },
-
-            hugCommand: {
-                command: 'hug',
-                rank: 'user',
-                type: 'startsWith',
-                getHug: function (chat) {
-                    var c = Math.floor(Math.random() * basicBot.chat.hugs.length);
-                    return basicBot.chat.hugs[c];
-                },
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
-                        else {
-                            var name = msg.substring(space + 2);
-                            var user = basicBot.userUtilities.lookupUserName(name);
-                            if (user === false || !user.inRoom) {
-                                return API.sendChat(subChat(basicBot.chat.nouserhug, {name: name}));
-                            }
-                            else if (user.username === chat.un) {
-                                return API.sendChat(subChat(basicBot.chat.selfhug, {name: name}));
-                            }
-                            else {
-                                return API.sendChat(subChat(basicBot.chat.hug, {nameto: user.username, namefrom: chat.un, hug: this.getHug()}));
-                            }
-                        }
-                    }
-                }
-            },
-
-            quoteCommand: {
-                command: 'quote',
-                rank: 'user',
-                type: 'startsWith',
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                            var crowd = API.getUsers();
-                            var msg = chat.message;
-                            var argument = msg.substring(cmd.length + 1).replace(/@/g, '');
-                            var randomUser = Math.floor(Math.random() * crowd.length);
-                            var randomBall = Math.floor(Math.random() * basicBot.chat.quotes.length);
-                            var randomSentence = Math.floor(Math.random() * 1);
-                            API.sendChat(basicBot.chat.quotes)
-                     }
-                }
-            },
-*/
             welcomeCommand: {
                 command: 'welcome',
                 rank: 'mod',
