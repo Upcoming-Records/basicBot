@@ -199,7 +199,7 @@
     "highfivehelp": "\/me Do '!hug @user' to hug them.",
     "selfhug": "\/me You can't hug yourself. It would be cool if you could though",
     "nouserhug": "You can't hug someone who isn't here",
-    "hugged": "\/me %%NAMEFROM%% hugged @%%NAMETO%%, %%HUG%%",
+    "hug": "\/me %%NAMEFROM%% hugged @%%NAMETO%%, %%HUG%%",
     "hughelp": "\/me %%NAME%% Do '!hug @user' to hug them!",
     "cycleguardtime": "\/me [@%%NAME%%] The cycleguard is set to %%TIME%% minute(s).",
     "dclookuprank": "\/me [@%%NAME%%] Only bouncers and above can do a lookup for others.",
