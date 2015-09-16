@@ -236,7 +236,7 @@
     var botCreatorIDs = ["3851534", "4105209"];
 
     var basicBot = {
-        version: "2.8.75 - Fundate!",
+        version: "2.8.80 - Fundate!",
         status: false,
         name: "Z00P",
         loggedInID: null,
@@ -2714,7 +2714,6 @@
                 rank: 'bouncer',
                 type: 'startsWith',
                 functionality: function (chat, cmd) {
-                    API.sendChat('!fb');
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
@@ -3689,7 +3688,43 @@
                     }
                 }
             },
+/*
+            pokeCommand: {
+                command: 'poke',
+                rank: 'user',
+                type: 'startsWith',
+                getPoke: function (chat) {
+                    var c = Math.floor(Math.random() * basicBot.chat.poke.length);
+                    return basicBot.chat.poke[c];
+                },
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
 
+                        var space = msg.indexOf(' ');
+                        if (space === -1) {
+                            API.sendChat(basicBot.chat.pokehelp);
+                            return false;
+                        }
+                        else {
+                            var name = msg.substring(space + 2);
+                            var user = basicBot.userUtilities.lookupUserName(name);
+                            if (user === false || !user.inRoom) {
+                                return API.sendChat(subChat(basicBot.chat.nouserpoke, {name: name}));
+                            }
+                            else if (user.username === chat.un) {
+                                return API.sendChat(subChat(basicBot.chat.selfpoke, {name: name}));
+                            }
+                            else {
+                                return API.sendChat(subChat(basicBot.chat.poke, {nameto: user.username, namefrom: chat.un, poke: this.getPoke()}));
+                            }
+                        }
+                    }
+                }
+            },
+*/
             welcomeCommand: {
                 command: 'welcome',
                 rank: 'mod',
