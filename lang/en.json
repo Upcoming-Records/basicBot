@@ -263,7 +263,7 @@
     "songstatistics": "\/me %%ARTIST%% - %%TITLE%%: %%WOOTS%%W\/%%GRABS%%G\/%%MEHS%%M.",
 	"stafftips": "\/me You can find tips on how to become staff here: https://raw.githubusercontent.com/Upcoming-Records/info/master/Staff",
 	"songstatslink": "\/me Intersted in our songstats? You'll love this link then: http://www.last.fm/user/UpcomingRecords",
-    "slack": "\/me To join our slack team, go to: http://slack.al3366.tk and follow the instructions. If you've already joined our Slack team, go to https://upcoming.slack.com/messages/annoucements/",
+    "slack": "\/me To join our slack team, go to: http://al3366.tk/slack and follow the instructions. For returning users, go to: https://upcoming.slack.com/",
     "update": "\/me Read the latest update here: http://bit.ly/1Ns562L",
     "aboutslack": "\/me Slack is our main means of communication between regular users and staff. We recommend you sign up and join our team on Slack to keep up to date with everything and just to talk to your friends outside of plugdj. Do !slack to get the link to join."
 }
